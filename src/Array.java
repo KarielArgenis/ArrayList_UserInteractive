@@ -39,8 +39,8 @@ public class Array {
 		for (int i=0; i<elements.size(); i++) {
 			if (elements.get(i)==data)
 				elements.remove(i);
-			if (elements.get(i)==data)
-				elements.remove(i);
+			if (elements.get(i)==data) //if there are two elements we want to remove in consequent order, this will remove them both instead of 
+				elements.remove(i);		//skipping the one following the first one removed
 		}
 	}
 	private static void showArrayList() {
